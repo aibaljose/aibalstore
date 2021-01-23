@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIbalweb</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://scontent-maa2-1.xx.fbcdn.net/v/t1.0-9/91177015_105694397754660_7529521151031115776_n.jpg?_nc_cat=102&ccb=2&_nc_sid=09cbfe&_nc_ohc=fMjr3LBuIbUAX9MajO8&_nc_ht=scontent-maa2-1.xx&oh=a9854e6bc12f6b6e8e3cd2cd89d40ee4&oe=6029527D">
+
+    <link rel="stylesheet" href="css/Fontawesome.css">
+
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Didact+Gothic&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    color: #292929;
+    line-height: 1.7em;
+    font-weight: 400;
+    background: #F0F0F0;
+    font-family: "Didact Gothic", sans-serif;
+    
+}
+
+
+.section-bg {
+    padding: 60px 0;
+    background: #F0F0F0;
+}
+
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    position: relative;
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+    text-transform: capitalize;
+    display: inline-block;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+
+
+
+
+
+
+.single-product {
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.single-product .product-thumb {
+    margin-bottom: 20px;
+}
+
+.single-product .product-title {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.single-product .product-title h3 {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.single-product .product-title h3 a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.single-product .product-title h3 a:hover {
+    color: #7289ab;
+}
+
+.single-product:hover {
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.product-btns
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+    color: #292929;
+}
+
+
+
+
+
+
+
+
+.btn-small {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+
+
+.btn-round {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white, 
+    -2px -2px 12px rgba(255, 255, 255, 0.5), 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+     2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+.btn-small:hover {
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       2px 2px 8px rgba(0, 0, 0, 0.15);
+    color: #7289ab;
+    text-decoration: none;
+}
+
+.btn-small:hover span {
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+
+.btn-round:hover {
+    box-shadow: inset -2px -2px 8px white,
+     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+       inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    color: #7289ab;
+}
+
+
+.button-center
+{
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.bttn-def {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-shadow: -2px -2px 8px white, -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+
+.bttn-def:hover {
+    color: #7289ab;
+    box-shadow: inset -2px -2px 8px white, inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bttn-def:hover span {
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+    <section class="section-bg">
+        <div class="container">
+           
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title">
+                        <h2>AIBAL WEB APP STORE </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+               
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <a href="app1/index.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">Revolutionary Profile</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+               <a href="app2/index.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                       
+                            <img src="img/2.png" alt="" >
+                        </div>
+                        <div class="product-title"></a>
+                            <h3><a href="">Best collection Music app</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <a href="app3/index.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/9.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">Formal clock</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <a href="app4/ic.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/8.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">Animation app</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <a href="app4/bu.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/10.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">Button</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <a href="app5/index.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/11.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">Search app</a></h3>
+                            <h3><a href="">work only at pc</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <a href="app5/ef.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/111.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">Super cool app</a></h3>
+                            <h3><a href="">work only at pc</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <a href="app6/index.html" target="_blank">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/112.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">whather</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="" class="btn-small mr-2">@</a>
+                            <a href="" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                            <a href="" class="btn-round"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+
+            <div class="row button-center">
+                <div class="col-xl-6 centered">
+                    <a href="https://aibaljose.github.io" class="bttn-def"><span>Load more</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+</body>
+</html>
